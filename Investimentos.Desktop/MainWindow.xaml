@@ -1,0 +1,72 @@
+﻿<Window x:Class="Investimentos.Desktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Investimentos.Desktop"
+        mc:Ignorable="d"
+        
+        Title="Invest" 
+        Height="720" 
+        Width="1080"
+        MinWidth="1000"
+        MinHeight="650"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanResize"
+        WindowState="Maximized">
+
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Border Grid.Row="0"
+                Background="#46b1d3"
+                Padding="30,20">
+            
+            <TextBlock Text="Visão geral"
+                       FontSize="40"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       VerticalAlignment="Center"/>
+
+        </Border>
+
+        <Grid Grid.Row="1"
+              Margin="30">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Row="0" Grid.Column="0"
+                    Content="Minha Carteira"
+                    FontSize="30"
+                    Margin="80,65,80,65"/>
+
+            <Button Grid.Row="0" Grid.Column="1"
+                    Content="Ativos"
+                    FontSize="30"
+                    Margin="80,65,80,65"/>
+
+            <Button Grid.Row="1" Grid.Column="0"
+                    Content="Calculadoras"
+                    FontSize="30"
+                    Margin="80,65,80,65"/>
+
+            <Button Grid.Row="1" Grid.Column="1"
+                    Content="Notícias"
+                    FontSize="30"
+                    Margin="80,65,80,65"/>
+
+        </Grid>
+    </Grid>
+</Window>
